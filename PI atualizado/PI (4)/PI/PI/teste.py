@@ -80,7 +80,7 @@ def adicionar_produto_page():
     def cancelar():
         adicionar_produto_page.master.destroy()
 
-    adicionar_produto_page.master = tk.Toplevel()
+    adicionar_produto_page.master = tk.Tk()
     adicionar_produto_page.master.title("Adicionar Produto")
     adicionar_produto_page.master.configure(bg="#FFC0CB")
 
