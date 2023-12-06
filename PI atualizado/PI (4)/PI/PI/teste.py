@@ -80,7 +80,7 @@ def adicionar_produto_page():
     def cancelar():
         adicionar_produto_page.master.destroy()
 
-    adicionar_produto_page.master = tk.Toplevel("root")
+    adicionar_produto_page.master = tk.Toplevel()
     adicionar_produto_page.master.title("Adicionar Produto")
     adicionar_produto_page.master.configure(bg="#FFC0CB")
 
@@ -124,3 +124,7 @@ def adicionar_produto_page():
 
     cancelar_button = tk.Button(adicionar_produto_page.master, text="Cancelar", command=cancelar, bg="#FF69B4", fg="white")
     confirmar_button.grid(row=12 , column=0, pady=10)
+
+    adicionar_produto_page.master.mainloop()
+
+adicionar_produto_page()
